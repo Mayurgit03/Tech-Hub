@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A0142" />
+      <stop offset="100%" stop-color="#5B007A" />
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9000B4" />
+      <stop offset="100%" stop-color="#BD00D6" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGradient)" rx="10"/>
+  
+  <!-- Abstract Tech Elements -->
+  <circle cx="150" cy="200" r="80" fill="none" stroke="url(#glowGradient)" stroke-width="2" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="450" cy="200" r="80" fill="none" stroke="url(#glowGradient)" stroke-width="2" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="300" cy="200" r="120" fill="none" stroke="url(#glowGradient)" stroke-width="2" opacity="0.5" filter="url(#glow)"/>
+  
+  <!-- Connection Lines -->
+  <line x1="150" y1="200" x2="450" y2="200" stroke="url(#glowGradient)" stroke-width="3" opacity="0.8" filter="url(#glow)"/>
+  <line x1="150" y1="200" x2="300" y2="100" stroke="url(#glowGradient)" stroke-width="2" opacity="0.6" filter="url(#glow)"/>
+  <line x1="450" y1="200" x2="300" y2="100" stroke="url(#glowGradient)" stroke-width="2" opacity="0.6" filter="url(#glow)"/>
+  
+  <!-- People Icons (Simplified) -->
+  <circle cx="150" cy="200" r="30" fill="#BD00D6" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="450" cy="200" r="30" fill="#BD00D6" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="300" cy="100" r="30" fill="#BD00D6" opacity="0.9" filter="url(#glow)"/>
+  
+  <!-- Code Elements -->
+  <text x="120" y="300" font-family="monospace" font-size="14" fill="white" opacity="0.7">&lt;code&gt;</text>
+  <text x="420" y="300" font-family="monospace" font-size="14" fill="white" opacity="0.7">&lt;/code&gt;</text>
+  <text x="270" y="320" font-family="monospace" font-size="14" fill="white" opacity="0.7">function()</text>
+</svg>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A0142" />
+      <stop offset="100%" stop-color="#5B007A" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#cardGradient)" rx="10"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="70" cy="150" r="25" fill="#BD00D6" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="330" cy="50" r="20" fill="#9000B4" opacity="0.5" filter="url(#glow)"/>
+  
+  <!-- Project Elements -->
+  <rect x="150" y="110" width="100" height="70" rx="5" fill="none" stroke="#BD00D6" stroke-width="2" filter="url(#glow)"/>
+  <line x1="150" y1="130" x2="250" y2="130" stroke="#BD00D6" stroke-width="2"/>
+  <circle cx="160" cy="120" r="5" fill="#BD00D6"/>
+  <circle cx="175" cy="120" r="5" fill="#BD00D6"/>
+  <circle cx="190" cy="120" r="5" fill="#BD00D6"/>
+  
+  <!-- Code Lines -->
+  <line x1="160" y1="145" x2="240" y2="145" stroke="#BD00D6" stroke-width="1" opacity="0.7"/>
+  <line x1="160" y1="155" x2="220" y2="155" stroke="#BD00D6" stroke-width="1" opacity="0.7"/>
+  <line x1="160" y1="165" x2="230" y2="165" stroke="#BD00D6" stroke-width="1" opacity="0.7"/>
+  
+  <!-- Main Text -->
+  <text x="200" y="80" font-family="Orbitron, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow)">
+    COLLEGE PROJECTS
+  </text>
+</svg>

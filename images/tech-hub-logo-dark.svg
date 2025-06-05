@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B007A" />
+      <stop offset="100%" stop-color="#BD00D6" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="60" height="60" rx="10" fill="url(#logoGradient)" filter="url(#glow)"/>
+  <path d="M15 15h10v30H15zM35 15h10v30H35zM15 25h30v10H15z" fill="white"/>
+  <text x="75" y="38" font-family="Orbitron, sans-serif" font-size="24" font-weight="700" fill="white" filter="url(#glow)">
+    TECH HUB
+  </text>
+</svg>

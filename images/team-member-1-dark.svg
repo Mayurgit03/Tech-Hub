@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A0142" />
+      <stop offset="100%" stop-color="#5B007A" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="150" cy="150" r="150" fill="url(#bgGradient)"/>
+  
+  <!-- Person Silhouette -->
+  <circle cx="150" cy="100" r="50" fill="#BD00D6" opacity="0.8" filter="url(#glow)"/>
+  <path d="M80,220 C80,180 220,180 220,220" fill="#BD00D6" opacity="0.8" filter="url(#glow)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="150" r="120" fill="none" stroke="#9000B4" stroke-width="2" opacity="0.5" stroke-dasharray="10,5"/>
+  
+  <!-- Text -->
+  <text x="150" y="240" font-family="Orbitron, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow)">
+    TEAM MEMBER 1
+  </text>
+</svg>

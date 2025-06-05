@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A0142" />
+      <stop offset="100%" stop-color="#5B007A" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#cardGradient)" rx="10"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="20" fill="#BD00D6" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="350" cy="150" r="30" fill="#9000B4" opacity="0.5" filter="url(#glow)"/>
+  
+  <!-- Code Elements -->
+  <text x="30" y="30" font-family="monospace" font-size="12" fill="white" opacity="0.7">&lt;hack&gt;</text>
+  <text x="320" y="180" font-family="monospace" font-size="12" fill="white" opacity="0.7">&lt;/hack&gt;</text>
+  
+  <!-- Main Text -->
+  <text x="200" y="100" font-family="Orbitron, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow)">
+    HACK BEYOND LIMITS!
+  </text>
+  
+  <!-- Laptop Icon -->
+  <rect x="175" y="120" width="50" height="40" rx="5" fill="#BD00D6" filter="url(#glow)"/>
+  <rect x="165" y="160" width="70" height="5" rx="2" fill="#BD00D6" filter="url(#glow)"/>
+</svg>
